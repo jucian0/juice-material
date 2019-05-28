@@ -1,0 +1,67 @@
+%ui-alert {
+    color: $white;
+    max-height: 6.25rem;
+    margin: 0.125rem auto;
+    padding: $padding-default;
+    border-radius: $border-radius-default;
+    @include shadows-4-sides(0.3625, $black-color);
+
+    & > h1, h2, h3, h4, h5, h6 {
+        color: $white;
+        margin: 0;
+    }
+
+    & .alert-content {
+        margin-top: $margin-default;
+        max-height: 4.375rem;
+        overflow: auto;
+    }
+
+    & .close {
+        position: relative;
+        float: right;
+        top: 0;
+        right: 0;
+        color: $white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        opacity: .7;
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.alert-success {
+    @extend %ui-alert;
+
+    background-color: $brand-success;
+}
+
+.alert-warning {
+    @extend %ui-alert;
+
+    background-color: $brand-warning;
+}
+
+.alert-danger {
+    @extend %ui-alert;
+
+    background-color: $brand-danger;
+}
+
+.alert-secondary {
+    @extend %ui-alert;
+
+    background-color: $brand-secondary;
+}
+
+.alert-info {
+    @extend %ui-alert;
+
+    background-color: $brand-info;
+}

@@ -1,0 +1,17 @@
+.bkg-primary{ background-color: $brand-primary}
+.bkg-secondary{ background-color: $brand-secondary}
+.bkg-info{ background-color: $brand-info}
+.bkg-success{ background-color: $brand-success}
+.bkg-warning{ background-color: $brand-warning}
+.bkg-danger{ background-color: $brand-danger}
+
+.txt-center{ text-align: center};
+.txt-left{ text-align: left};
+.txt-right{ text-align: right};
+
+.inline{ display: inline;};
+.item-total-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

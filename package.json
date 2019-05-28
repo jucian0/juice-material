@@ -1,0 +1,19 @@
+{
+  "name": "juice-material",
+  "version": "1.0.0",
+  "description": "This is a library of components base on material design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss","css", "material-design"
+  ],
+  "author": "Juciano C Barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "material-design-iconic-font": "^2.2.0",
+    "roboto-fontface": "^0.10.0"
+  }
+}

@@ -1,0 +1,23 @@
+//  ================================================================================
+//  Grid Layout
+//  ================================================================================
+.grid-container {
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    grid-gap: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+    background-color: $purple;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-full{
+    background-color: $grey-500;
+}

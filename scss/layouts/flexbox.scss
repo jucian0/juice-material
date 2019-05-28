@@ -1,0 +1,47 @@
+.jc-flex-container {
+    @extend %u-display-flex;
+}
+
+.jc-flex-row {
+    @extend %u-flex-direction-row;
+}
+
+.jc-flex-col {
+    @extend %u-flex-direction-column;
+}
+
+.jc-flex-center {
+    @extend %u-flex-total-centered;
+}
+
+.jc-flex-justify-content-space-around {
+    @extend %u-flex-justify-content-space-around;
+}
+
+.jc-flex-justify-content-space-between {
+    @extend %u-flex-justify-content-space-between;
+}
+
+.jc-flex-justify-content-flex-end {
+    @extend %u-flex-justify-content-flex-end;
+}
+
+.jc-flex-justify-content-flex-start {
+    @extend %u-flex-justify-content-flex-start;
+}
+
+.jc-flex-justify-content-center {
+    @extend %u-flex-justify-content-center;
+}
+
+@each $part in $parts {
+    %u-flex-item-#{$part} {
+        flex: $part;
+    }
+
+    .jc-flex-item-#{$part} {
+        @extend %u-flex-item-#{$part};
+
+        padding: 0 15px 0 15px;
+    }
+}

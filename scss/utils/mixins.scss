@@ -1,0 +1,15 @@
+@mixin shadows($value1, $value2) {
+    box-shadow: $value1#{'rem'} $value1#{'rem'} $value2#{'rem'} rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@mixin colors-buttons($color, $background, $border){
+    border-color: $border;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin shadows-4-sides($value, $color){
+    box-shadow: 0 0 $value#{'rem'} $color;
+    transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+}

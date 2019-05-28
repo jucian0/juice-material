@@ -1,0 +1,11 @@
+/********************** PATHS FONT ICONS *************************/
+$zmdi-font-path : '~material-design-iconic-font/dist/fonts';
+@import '~material-design-iconic-font/scss/material-design-iconic-font';
+
+/********************** PATHS FONT ROBOTO *************************/
+$roboto-font-path: '~roboto-fontface/fonts';
+@import '~roboto-fontface/css/roboto/sass/roboto-fontface.scss';
+
+/*********************** PATHS FONT AWESOME ***********************/
+$fa-font-path:        '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome.scss'

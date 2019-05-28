@@ -1,0 +1,300 @@
+/** Default styles form buttons **/
+.btn {
+    padding: 0.375rem 1rem 0.375rem 1rem;
+    font-weight: 400;
+    font-size: $font-size-buttons;
+    position: relative;
+    border-radius: $border-radius-default;
+    border-style: solid;
+    border-width: 1px;
+
+    @extend %-ripple-effect;
+
+    @include shadows(0.0625, 0.125);
+
+    text-transform: uppercase;
+    line-height: 1.846;
+    cursor: pointer;
+    margin: 0.125rem;
+    opacity: .8;
+
+    &:hover {
+        opacity: 1;
+
+        @include shadows(0.1875, 0.375);
+    }
+}
+
+/** Styles for buttons commons **/
+.btn-primary {
+    @include colors-buttons($white, $brand-primary, transparent);
+}
+
+.btn-info {
+    @include colors-buttons($white, $brand-info, transparent);
+}
+
+.btn-secondary {
+    @include colors-buttons($white, $blue, transparent);
+}
+
+.btn-success {
+    @include colors-buttons($white, $brand-success, transparent);
+}
+
+.btn-warning {
+    @include colors-buttons($white, $brand-warning, transparent);
+}
+
+.btn-danger {
+    @include colors-buttons($white, $brand-danger, transparent);
+}
+
+.btn-default {
+    @include colors-buttons($black, $white, transparent);
+}
+
+/** styles form border buttons **/
+.btn-border-primary {
+    @include colors-buttons($brand-primary, transparent, $brand-primary);
+
+    &:hover {
+        @include colors-buttons($white, $brand-primary, $brand-primary);
+    }
+}
+
+.btn-border-info {
+    @include colors-buttons($brand-info, transparent, $brand-info);
+
+    &:hover {
+        @include colors-buttons($white, $brand-info, $brand-info);
+    }
+}
+
+.btn-border-secondary {
+    @include colors-buttons($blue, transparent, $blue);
+
+    &:hover {
+        @include colors-buttons($white, $blue, $blue);
+    }
+}
+
+.btn-border-success {
+    @include colors-buttons($brand-success, transparent, $brand-success);
+
+    &:hover {
+        @include colors-buttons($white, $brand-success, $brand-success);
+    }
+}
+
+.btn-border-warning {
+    @include colors-buttons($brand-warning, transparent, $brand-warning);
+
+    &:hover {
+        @include colors-buttons($white, $brand-warning, $brand-warning);
+    }
+}
+
+.btn-border-danger {
+    @include colors-buttons($brand-danger, transparent, $brand-danger);
+
+    &:hover {
+        @include colors-buttons($white, $brand-danger, $brand-danger);
+    }
+}
+
+.btn-border-default {
+    @include colors-buttons($grey-500, transparent, $grey-500);
+
+    &:hover {
+        @include colors-buttons($white, $grey-500, $grey-500);
+    }
+}
+
+/** styles for link buttons **/
+%u-buttons-flat {
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 1;
+
+    @extend %u-no-shadows;
+
+    &:hover {
+        opacity: .7;
+        background-color: $grey-200;
+
+        @extend %u-no-shadows;
+    }
+}
+
+.btn-flat-primary {
+    color: $brand-primary;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-info {
+    color: $brand-info;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-secondary {
+    color: $blue;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-success {
+    color: $brand-success;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-warning {
+    color: $brand-warning;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-danger {
+    color: $brand-danger;
+
+    @extend %u-buttons-flat;
+}
+
+.btn-flat-default {
+    color: $black;
+
+    @extend %u-buttons-flat;
+}
+
+/** styles size buttons **/
+.btn-lg {
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    font-size: $font-size-lg-buttons;
+}
+
+.btn-sm {
+    padding: .40625rem .5rem;
+    line-height: 1.25;
+    font-size: $font-size-sm-buttons;
+}
+
+.btn-xs {
+    padding: 0.0625rem 0.3125rem;
+    line-height: 1.5;
+    font-size: $font-size-xs-buttons;
+}
+
+/** styles floating action buttons **/
+
+%btn-fab {
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    opacity: 1;
+
+    & > i {
+        font-size: $font-size-fab-buttons;
+        margin-left: -0.1375rem;
+        margin-top: 0.25625rem;
+    }
+}
+
+.btn-fab-primary {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $brand-primary, $brand-primary);
+}
+
+.btn-fab-info {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $brand-info, $brand-info);
+}
+
+.btn-fab-secondary {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $blue, $blue);
+}
+
+.btn-fab-success {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $brand-success, $brand-success);
+}
+
+.btn-fab-warning {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $brand-warning, $brand-warning);
+}
+
+.btn-fab-danger {
+    @extend %btn-fab;
+
+    @include colors-buttons($white, $brand-danger, $brand-danger);
+}
+
+.btn-fab-default {
+    @extend %btn-fab;
+
+    @include colors-buttons($black, transparent, transparent);
+}
+
+/**styles buttons icon **/
+.btn-icon {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50%;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    opacity: 1;
+
+    @extend %u-no-shadows;
+
+    &:hover {
+        opacity: .7;
+        background-color: $grey-200;
+
+        @extend %u-no-shadows;
+    }
+
+    & > i {
+        font-size: $font-size-icon-buttons;
+        margin-left: -0.1975rem;
+        margin-top: 0.15625rem;
+        color: $brand-primary;
+    }
+}
+
+/** styles button block **/
+.btn-block{
+    width: 100%;
+    display: block;
+}
+
+/** styles group buttons **/
+.btn-group{
+    margin: 0 0.125rem 0 0.125rem;
+    & > button{
+        margin: 0;
+        border-radius: 0;
+    }
+    & > button:last-child{
+        border-radius: 0 $border-radius-default $border-radius-default 0;
+    }
+    & > button:first-child{
+        border-radius: $border-radius-default 0 0 $border-radius-default;
+    }
+}
+
+/** styles btn with icons **/
+.with-icon{
+    i {
+        padding: 0 0 0 5px;
+    }
+}

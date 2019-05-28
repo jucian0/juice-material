@@ -1,0 +1,116 @@
+* {
+    outline: none !important;
+}
+
+body, h1, h2, h3, h4, h5, .h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    color: $black-color;
+    font-size: $font-size-default;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1 {
+    font-size: $font-size-h1;
+    line-height: 1.1;
+}
+
+h2, .h2 {
+    font-size: $font-size-h2;
+    line-height: 1.1;
+}
+
+h3, .h3 {
+    font-size: $font-size-h3;
+    line-height: 1.1;
+}
+
+h4, .h4 {
+    font-size: $font-size-h4;
+    line-height: 1.1;
+}
+
+h5, .h5 {
+    font-size: $font-size-h5;
+    line-height: 1.1;
+    margin-bottom: 0.9375rem;
+}
+
+h6, .h6 {
+    font-size: $font-size-h6;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+.title {
+    color: $black-color;
+}
+
+p {
+    font-size: $font-size-paragraph;
+    margin: 0 0 0.625rem;
+}
+
+.blockquote {
+    padding: 0.625rem 1.25rem;
+    margin: 0 0 1.25rem;
+    border-left: 0.3125rem solid #eee;
+
+    & p {
+        font-style: italic;
+        font-size: $font-size-block;
+    }
+
+    & small {
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857143;
+        font-weight: 400;
+    }
+}
+
+.text-white {
+    color: $white;
+}
+.text-grey {
+    color: $grey-color;
+}
+
+.text-primary {
+    color: $brand-primary;
+}
+
+.text-info {
+    color: $brand-info;
+}
+
+.text-secondary {
+    color: $brand-secondary;
+}
+
+.text-success {
+    color: $brand-success;
+}
+
+.text-warning {
+    color: $brand-warning;
+}
+
+.text-danger {
+    color: $brand-danger;
+}
