@@ -1,8 +1,9 @@
 {
   "name": "juice-material",
-  "version": "1.0.0",
-  "description": "This is a library of components base on material design.",
+  "version": "1.0.02",
+  "description": "This is a library of components based on material design.",
   "main": "index.js",
+  "repository": "https://github.com/Jucian0/juice-material",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
