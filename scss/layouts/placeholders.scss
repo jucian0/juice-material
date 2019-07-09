@@ -1,0 +1,40 @@
+
+%grid-flex-align-content{
+    @each $var in $variations-align-content {
+        $index: index($variations-align-content, $var);
+        .align-content-#{$var}{
+            align-content: $var;
+            -ms-flex-line-pack: nth($variations-ms-align-content, $index);
+        }
+    }
+}
+
+%grid-flex-align-self{
+    @each $var in $variations-align-self {
+        $index: index($variations-align-self, $var);
+        .align-self-#{$var} {
+            align-self: $var;
+            -ms-flex-item-align: nth($variations-ms-align-self, $index);
+        }
+    }
+}
+
+%grid-flex-justify-content{
+    @each $var in $variations-justify-content {
+        $index: index($variations-justify-content, $var);
+        .content-#{$var} {
+            justify-content: $var;
+            -ms-flex-pack: nth($variations-ms-justify-content, $index);
+        }
+    }
+}
+
+%grid-flex-align-items{
+    @each $var in $variations-align-items {
+        $index: index($variations-align-items, $var);
+        .items-#{$var} {
+            align-items: $var;
+            -ms-flex-align: nth($variations-ms-align-items, $index);
+        }
+    }
+}

@@ -9,7 +9,15 @@ $border-radius-default:             0.1875rem;
 $padding-default:                   0.9375rem !default;
 $margin-default:                    0.9375rem !default;
 
+$border-radius-small:               3px !default;
+$border-radius-med:                 6px !default;
+$border-radius-big:                 10px !default;
+
 $spacer:                            1rem !default;
+$space-big:                         40px !default;
+$space-med:                         20px !default;
+$space-small:                       10px !default;
+
 $margin-buttons:                    0.125rem;
 
 
@@ -42,3 +50,17 @@ $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
+
+
+/*************************  Variables variations flexbox ****************************/
+$variations-align-content: flex-start, flex-end, center,space-between, space-around, stretch;
+$variations-ms-align-content: start, end, center, justify, distribute, stretch;
+
+$variations-align-self: flex-start, flex-end, center, stretch, baseline, auto;
+$variations-ms-align-self: start, end, center, stretch, baseline, auto;
+
+$variations-justify-content: flex-start, flex-end, center,space-between, space-around;
+$variations-ms-justify-content: start, end, center, justify, distribute;
+
+$variations-align-items: flex-start, flex-end, center, stretch, baseline;
+$variations-ms-align-items: start, end, center, stretch, baseline;

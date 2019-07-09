@@ -1,0 +1,117 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    td, th {
+        &:first-child {
+            padding-left: $space-big;
+
+            @media screen and (max-width: $medium-screen) {
+                padding-left: $space-big * 0.8;
+            }
+
+            @media screen and (max-width: $small-screen) {
+                padding-left: $space-med;
+            }
+        }
+
+        &:last-child {
+            padding-right: $space-big;
+
+            @media screen and (max-width: $medium-screen) {
+                padding-right: $space-big * 0.8;
+            }
+
+            @media screen and (max-width: $small-screen) {
+                padding-right: $space-med;
+            }
+        }
+    }
+
+    thead {
+        tr {
+            color: lighten($black, 15%);
+            font-size: $font-size-med;
+            border-bottom: solid 1px lighten($grey, 30%);
+            line-height: $space-big * 1.3;
+            text-align: left;
+        }
+    }
+
+    tbody {
+        tr {
+            font-size: $font-size-med + 1px;
+            line-height: $space-big * 1.3;
+            border-bottom: solid 1px lighten($grey, 30%);
+            will-change: background;
+        }
+	}
+	
+	.table-primary{
+		background-color: $brand-primary;
+		color: $white;
+		border-bottom: solid 1px $brand-primary!important;
+
+		&:hover{
+			background-color: $brand-primary!important;
+			opacity: .7;
+		}
+	}
+
+	.table-secondary{
+		background-color: $brand-secondary;
+		color: $white;
+		border-bottom: solid 1px $brand-secondary!important;
+
+		&:hover{
+			background-color: $brand-secondary!important;
+			opacity: .7;
+		}
+	}
+
+	.table-info{
+		background-color: $brand-info;
+		color: $white;
+		border-bottom: solid 1px $brand-info!important;
+		&:hover{
+			background-color: $brand-info!important;
+			opacity: .7;
+		}
+	}
+
+	.table-danger{
+		background-color: $brand-danger;
+		color: $white;
+		border-bottom: solid 1px $brand-danger!important;
+		&:hover{
+			background-color: $brand-danger!important;
+			opacity: .7;
+		}
+	}
+
+	.table-warning{
+		background-color: $brand-warning;
+		color: $white;
+		border-bottom: solid 1px $brand-warning!important;
+		&:hover{
+			background-color: $brand-warning!important;
+			opacity: .7;
+		}
+	}
+}
+
+.table-hover {
+    tbody {
+        tr {
+            font-size: $font-size-med + 1px;
+            line-height: $space-big * 1.3;
+            border-bottom: solid 1px lighten($grey, 30%);
+            will-change: background;
+
+            &:hover {
+                background: lighten($grey, 30%);
+            }
+        }
+    }
+}

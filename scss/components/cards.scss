@@ -1,0 +1,9 @@
+.card {
+	box-shadow: $box-shadow-card;
+	border-radius: $border-radius-default;
+	padding: 0 !important;
+}
+
+.tile, .card {
+    background: white;
+}
