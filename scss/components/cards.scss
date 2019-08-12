@@ -2,6 +2,39 @@
 	box-shadow: $box-shadow-card;
 	border-radius: $border-radius-default;
 	padding: 0 !important;
+
+	.card-header,.card-body,.card-footer,.card-title,.card-description{
+		& h1,h2,h3,h4,h5,h6,p,span{
+			padding: 0;
+			margin: 0;
+		}
+		padding: 15px;
+	}
+
+	.card-media {
+		margin: 0;
+		img{
+			width: 100%;
+		}
+	}
+
+	.card-media > img {
+		max-width: 100%;
+	}
+
+	.card-actions {
+		border-top: 1px solid $grey-200;
+		padding: 15px;
+		display: flex;
+		box-sizing:border-box;
+		align-items: center;
+	}
+
+	.card-actions > .btn-icon {
+		margin-right: 3px;
+		margin-left: 3px;
+	}
+
 }
 
 .tile, .card {

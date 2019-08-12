@@ -265,11 +265,39 @@
 
     & > i {
         font-size: $font-size-icon-buttons;
-        margin-left: -0.1975rem;
+        margin-left: -0.08000rem;
         margin-top: 0.15625rem;
         color: $brand-primary;
     }
 }
+
+.btn-icon-sm {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    padding: 1px 3px 1px 1px;
+
+    @extend %u-no-shadows;
+
+    &:hover {
+        opacity: .7;
+        background-color: $grey-200;
+
+        @extend %u-no-shadows;
+    }
+
+    & > i {
+        font-size: $font-size-icon-buttons;
+        margin-left: -0.08000rem;
+        margin-top: 0.15625rem;
+        color: $brand-primary;
+    }
+}
+
+
 
 /** styles button block **/
 .btn-block{
