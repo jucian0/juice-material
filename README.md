@@ -1,6 +1,6 @@
 # Juice Material
 
-Only CSS, lib Web Components based on Material Design.
+Just CSS, Web Components based on Material Design.
 
 ## Documentation
 
